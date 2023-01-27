@@ -1,0 +1,19 @@
+{
+  "name": "202301-w2ch5-covadonga-millan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cricomig/202301-W2CH5-Covadonga-Millan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cricomig/202301-W2CH5-Covadonga-Millan/issues"
+  },
+  "homepage": "https://github.com/cricomig/202301-W2CH5-Covadonga-Millan#readme"
+}
