@@ -12,13 +12,13 @@
 
 import { doBoard } from './functions/doBoard-funct.js';
 
-const rows = 6;
-const columns = 6;
+const rows = 3;
+const columns = 3;
 
 const gameBoard = doBoard(rows, columns);
 console.table(gameBoard);
 
-import { isAlive } from './functions/isAlive-funct.js';
+import { countAlive } from './functions/areAlive-funct.js';
 
-const checkNeighbors = isAlive(gameBoard);
-console.table(checkNeighbors);
+const checkNeighbors = countAlive(gameBoard);
+console.log(checkNeighbors);
