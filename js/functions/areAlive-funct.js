@@ -13,12 +13,8 @@ export const countAlive = (board) => {
     for (let j = 0; j < board[i].length; j++) {
       if (i === 1 && j === 1) continue;
 
-      switch (board[i][j]) {
-        case 1:
-          areAlive++;
-          break;
-        default:
-          break;
+      if (board[i][j] === 1) {
+        areAlive++;
       }
     }
   }
