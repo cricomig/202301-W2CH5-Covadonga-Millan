@@ -1,4 +1,4 @@
-import { doBoard } from './doBoard-funct.js';
+import { doBoard } from '../functions/doBoard-funct.js';
 describe('Given doBoard function', () => {
   describe('When we have an empty array', () => {
     test('Then the function pushes random 0s and 1ns and returns a 6x6 board', () => {

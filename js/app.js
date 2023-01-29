@@ -10,10 +10,15 @@
 // Alive >=2 = lives
 // Alive === 3 = isBorn
 
-import { doBoard } from './doBoard-funct.js';
+import { doBoard } from './functions/doBoard-funct.js';
 
 const rows = 6;
 const columns = 6;
 
 const gameBoard = doBoard(rows, columns);
 console.table(gameBoard);
+
+import { isAlive } from './functions/isAlive-funct.js';
+
+const checkNeighbors = isAlive(gameBoard);
+console.table(checkNeighbors);
