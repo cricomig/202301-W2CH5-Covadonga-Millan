@@ -10,34 +10,7 @@
 // Alive >=2 = lives
 // Alive === 3 = isBorn
 
-// El tablero es como un eje de coordenadas y el bicho principal estaría en la 0,0
-// Entonces en un cuadrado con un bicho en el centro que tenga en cuenta sus vecinos
-// las posiciones serían así:
-// (-1, 1)   (0,1)    (1,1)
-// (-1, 0) (el bicho) (1,0)
-// (-1,-1)  (0,-1)    (1,-1)
+import { doBoard } from './doBoard-funct.js';
 
-let table;
-let x;
-let y;
-let rows = 3;
-let columns = 3;
-let isAlive = Boolean;
-let bicho;
-
-// Declaramos los ejes para poder ver dónde están los bichos y poder descartar la
-// posición 0,0 donde estaría el bicho primigenio.
-// Si está vivo, isAlive será true, si no, false.
-
-const table = () => {
-  for (x = 0; x < rows; x++) {
-    for (y = 0; y < columns; y++) {
-      if isAlive === true;
-
-    }
-  }
-
-  return table;
-};
-
-console.table(obj);
+const gameBoard = doBoard(6, 6);
+console.table(gameBoard);
