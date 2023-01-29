@@ -12,5 +12,8 @@
 
 import { doBoard } from './doBoard-funct.js';
 
-const gameBoard = doBoard(6, 6);
+const rows = 6;
+const columns = 6;
+
+const gameBoard = doBoard(rows, columns);
 console.table(gameBoard);
