@@ -1,4 +1,4 @@
-import { areAlive, countAlive } from '../functions/areAlive-funct';
+import { countAlive } from '../functions/areAlive-funct';
 describe('Given areAlive function', () => {
   describe('When we have a 3x3 board filled with 1 and 0', () => {
     test('Then the function counts how many alive cells are around the 1,1 position', () => {

@@ -9,68 +9,18 @@
 export const countAlive = (board) => {
   let areAlive = 0;
 
-  switch (board[0][0]) {
-    case 1:
-      areAlive++;
-      break;
-    default:
-      break;
-  }
+  for (let i = 0; i < board.length; i++) {
+    for (let j = 0; j < board[i].length; j++) {
+      if (i === 1 && j === 1) continue;
 
-  switch (board[0][1]) {
-    case 1:
-      areAlive++;
-      break;
-    default:
-      break;
-  }
-
-  switch (board[0][2]) {
-    case 1:
-      areAlive++;
-      break;
-    default:
-      break;
-  }
-
-  switch (board[1][0]) {
-    case 1:
-      areAlive++;
-      break;
-    default:
-      break;
-  }
-
-  switch (board[1][2]) {
-    case 1:
-      areAlive++;
-      break;
-    default:
-      break;
-  }
-
-  switch (board[2][0]) {
-    case 1:
-      areAlive++;
-      break;
-    default:
-      break;
-  }
-
-  switch (board[2][1]) {
-    case 1:
-      areAlive++;
-      break;
-    default:
-      break;
-  }
-
-  switch (board[2][2]) {
-    case 1:
-      areAlive++;
-      break;
-    default:
-      break;
+      switch (board[i][j]) {
+        case 1:
+          areAlive++;
+          break;
+        default:
+          break;
+      }
+    }
   }
 
   return areAlive;
